@@ -18,23 +18,69 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-2. Install dependencies.
+2. Install Python dependencies.
 
 ```powershell
 pip install -r requirements.txt
 ```
 
-3. Start the backend server.
+3. Install frontend dependencies.
+
+```powershell
+cd frontend
+npm install
+cd ..
+```
+
+4. Start the backend server.
 
 ```powershell
 uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
-4. Start the Streamlit dashboard.
+5. Start the Streamlit dashboard.
 
 ```powershell
 streamlit run frontend/app.py
 ```
+
+## Build
+
+1. Build the frontend bundle.
+
+```powershell
+cd frontend
+npm run build
+cd ..
+```
+
+2. (Optional) Use the setup script to install Python dependencies and prepare the local environment.
+
+```powershell
+.\build.ps1
+```
+
+## Render deployment
+
+This project includes `render.yaml` for Render deployment.
+
+- Build command:
+
+```bash
+pip install -r requirements.txt
+```
+
+- Start command:
+
+```bash
+streamlit run app.py --server.address 0.0.0.0 --server.port $PORT --server.headless true
+```
+
+- Python version:
+
+  - `pythonVersion: 3.10.13`
+
+If Render still uses Python 3.14, set the service Python version in the Render dashboard to `3.10.13` or re-run the deployment using `render.yaml`.
 
 ## Setup
 
