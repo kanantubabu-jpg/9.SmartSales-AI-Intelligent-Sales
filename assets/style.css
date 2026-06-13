@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+.css-1v3fvcr {
+    background-color: #f8fafc;
+}
+
+.stButton>button {
+    background-color: #2563eb;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.12);
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.stButton>button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.stTextInput>div>div>input,
+.stNumberInput>div>div>input,
+.stSelectbox>div>div>div>div,
+.stMultiSelect>div>div>div>div,
+.stDateInput>div>div>input,
+.stSlider>div>div>div {
+    border-radius: 10px;
+}
+
+.reportview-container .markdown-text-container {
+    font-size: 1rem;
+}
+
+.block-container {
+    padding: 2rem 2rem 2rem 2rem;
+    max-width: 1600px;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #eef2ff;
+    border-radius: 1rem;
+}
+
+[data-testid="stSidebar"] .block-container {
+    padding: 1rem;
+}
+
+.stMetric {
+    border-radius: 1rem;
+}
+
+.stDataFrame, .element-container {
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.stFileUploader>div>div>div {
+    border-radius: 14px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    padding: 0.75rem;
+}
+
+.stButton>button[disabled] {
+    opacity: 0.6;
+}
