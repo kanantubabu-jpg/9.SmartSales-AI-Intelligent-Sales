@@ -84,13 +84,12 @@ If Render still uses Python 3.14, set the service Python version in the Render d
 
 ## Setup
 
-- Use the PowerShell setup script to create the virtual environment and install dependencies:
 
 ```powershell
 .\build.ps1
 ```
 
-- After setup, start the backend and frontend as shown above.
+ After running .\build.ps1, the script will create the virtual environment, install Python dependencies, install frontend dependencies, and build frontend assets. Start the backend and frontend as shown above.
 
 ## Project layout
 
